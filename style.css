@@ -125,3 +125,204 @@ footer{background:#0e1c26;color:#d8dee2;padding:30px 0}
   .hero-note{right:8%;bottom:30px}
   .section{padding:60px 0}
 }
+/* =========================================
+   SERVICES SECTION
+   ========================================= */
+
+.services-section {
+  background: #f8f7f4;
+  padding: 100px 0;
+}
+
+.section-heading {
+  max-width: 760px;
+  margin-bottom: 55px;
+}
+
+.section-heading .eyebrow {
+  color: #d9a83e;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.section-heading h2 {
+  color: #102536;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 54px;
+  line-height: 1.05;
+  margin: 0 0 22px;
+  font-weight: 600;
+}
+
+.section-intro {
+  color: #53616b;
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 720px;
+  margin: 0;
+}
+
+
+/* SERVICES GRID */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+
+/* SERVICE CARD */
+
+.service-card {
+  background: #ffffff;
+  border: 1px solid #e5e3de;
+  padding: 36px 32px 34px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 35px rgba(16, 37, 54, 0.10);
+}
+
+
+/* SERVICE ICON */
+
+.service-icon {
+  color: #d9a83e;
+  font-size: 28px;
+  line-height: 1;
+  margin-bottom: 25px;
+}
+
+
+/* SERVICE TITLE */
+
+.service-card h3 {
+  color: #102536;
+  font-size: 23px;
+  line-height: 1.2;
+  margin: 0 0 15px;
+  font-weight: 700;
+}
+
+
+/* SERVICE DESCRIPTION */
+
+.service-card > p {
+  color: #53616b;
+  font-size: 15px;
+  line-height: 1.65;
+  margin: 0 0 22px;
+}
+
+
+/* SERVICE LIST */
+
+.service-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-card li {
+  position: relative;
+  color: #344854;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-left: 18px;
+  margin-bottom: 8px;
+}
+
+.service-card li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #d9a83e;
+  font-weight: 700;
+}
+
+
+/* SERVICE LINK */
+
+.service-link {
+  display: inline-block;
+  margin-top: auto;
+  padding-top: 25px;
+  color: #102536;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.service-link:hover {
+  color: #d9a83e;
+}
+
+
+/* FEATURED SERVICE */
+
+.service-featured {
+  border-top: 4px solid #d9a83e;
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-heading h2 {
+    font-size: 46px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+  .services-section {
+    padding: 70px 20px;
+  }
+
+  .section-heading {
+    margin-bottom: 40px;
+  }
+
+  .section-heading h2 {
+    font-size: 40px;
+  }
+
+  .section-intro {
+    font-size: 16px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .service-card {
+    min-height: auto;
+    padding: 30px 25px;
+  }
+
+}
