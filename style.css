@@ -25,9 +25,9 @@ background-repeat: no-repeat;};overflow:hidden}
   inset: 0;
   background: linear-gradient(
     90deg,
-    rgba(10, 25, 35, 0.68) 0%,
+    rgba(10, 25, 35, 0.52) 0%,
     rgba(10, 25, 35, 0.40) 38%,
-    rgba(10, 25, 35, 0.08) 70%,
+    rgba(10, 25, 35, 0.28) 70%,
     rgba(10, 25, 35, 0) 100%
   );
   z-index: 1;
