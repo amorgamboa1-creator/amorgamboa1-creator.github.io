@@ -413,52 +413,39 @@ footer{background:#0e1c26;color:#d8dee2;padding:30px 0}
 
 /* PORTFOLIO IMAGE */
 
-.portfolio-image {
-  height: 300px;
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  padding: 25px;
+.portfolio-image-1 {
+  background-image: url("GA_portfolio_1.png");
   background-size: cover;
   background-position: center;
-}
-
-
-/*
-   TEMPORARY PORTFOLIO BACKGROUNDS
-
-   These are temporary visual placeholders.
-   Replace them later with your actual portfolio images.
-*/
-
-.portfolio-image-1 {
-  background:
-    linear-gradient(rgba(16, 37, 54, 0.20), rgba(16, 37, 54, 0.45)),
-    linear-gradient(135deg, #b9b7ae, #737b7c);
+  background-repeat: no-repeat;
 }
 
 .portfolio-image-2 {
-  background:
-    linear-gradient(rgba(16, 37, 54, 0.18), rgba(16, 37, 54, 0.45)),
-    linear-gradient(135deg, #a9b2b2, #56666c);
+  background-image: url("GA_portfolio_2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .portfolio-image-3 {
-  background:
-    linear-gradient(rgba(16, 37, 54, 0.18), rgba(16, 37, 54, 0.45)),
-    linear-gradient(135deg, #d1c8b7, #8d887d);
+  background-image: url("GA_portfolio_3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .portfolio-image-4 {
-  background:
-    linear-gradient(rgba(16, 37, 54, 0.18), rgba(16, 37, 54, 0.45)),
-    linear-gradient(135deg, #aebabe, #667681);
+  background-image: url("GA_portfolio_4.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .portfolio-image-5 {
-  background:
-    linear-gradient(rgba(16, 37, 54, 0.18), rgba(16, 37, 54, 0.45)),
-    linear-gradient(135deg, #b9b9a4, #777965);
+  background-image: url("GA_portfolio_5.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 
