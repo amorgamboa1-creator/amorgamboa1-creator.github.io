@@ -434,45 +434,40 @@ footer{background:#0e1c26;color:#d8dee2;padding:30px 0}
 
 
 /* Just Listed */
-
 .portfolio-image-1 {
-  background-image: url("GA_portfolio_1.png");
-  background-size: cover;
-  background-position: center;
-}
-
-
-/* Property Walkthrough */
-
-.portfolio-image-2 {
   background-image: url("GA_portfolio_2.png");
   background-size: cover;
   background-position: center;
 }
 
 
-/* Luxury Property */
-
-.portfolio-image-3 {
+/* Property Walkthrough */
+.portfolio-image-2 {
   background-image: url("GA_property_3.png");
   background-size: cover;
   background-position: center;
 }
 
 
-/* Open Home */
+/* Luxury Property Content */
+.portfolio-image-3 {
+  background-image: url("GA_portfolio_1.png");
+  background-size: cover;
+  background-position: center;
+}
 
+
+/* Open Home */
 .portfolio-image-4 {
-  background-image: url("GA_portfolio_4.png");
+  background-image: url("GA_portfolio_5.png");
   background-size: cover;
   background-position: center;
 }
 
 
 /* Sold Campaign */
-
 .portfolio-image-5 {
-  background-image: url("GA_portfolio_5.png");
+  background-image: url("GA_portfolio_4.png");
   background-size: cover;
   background-position: center;
 }
