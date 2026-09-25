@@ -1105,3 +1105,269 @@ footer{background:#0e1c26;color:#d8dee2;padding:30px 0}
   }
 
 }
+
+/* =========================================
+   HOW CLIENTS CAN WORK WITH GA
+   ========================================= */
+
+.work-with-ga-section {
+  background: #f8f7f4;
+  padding: 110px 0;
+}
+
+
+/* HEADING */
+
+.work-with-ga-heading {
+  max-width: 760px;
+  margin-bottom: 55px;
+}
+
+.work-with-ga-heading .eyebrow {
+  color: #d9a83e;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0 0 16px;
+}
+
+.work-with-ga-heading h2 {
+  color: #102536;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 56px;
+  line-height: 1.02;
+  font-weight: 600;
+  margin: 0 0 22px;
+}
+
+.work-with-ga-heading h2 em {
+  font-weight: 500;
+}
+
+.work-with-ga-heading > p:last-child {
+  color: #53616b;
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 680px;
+  margin: 0;
+}
+
+
+/* CARDS */
+
+.work-with-ga-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.work-with-ga-card {
+  background: #ffffff;
+  border: 1px solid #e2e0da;
+  padding: 35px 32px 32px;
+
+  display: flex;
+  flex-direction: column;
+
+  min-height: 500px;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.work-with-ga-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(16, 37, 54, 0.10);
+}
+
+
+/* FEATURED CARD */
+
+.work-with-ga-featured {
+  border-top: 4px solid #d9a83e;
+}
+
+
+/* NUMBER */
+
+.work-with-ga-number {
+  color: #d9a83e;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 27px;
+  font-weight: 600;
+  margin-bottom: 28px;
+}
+
+
+/* TYPE */
+
+.work-with-ga-type {
+  color: #d9a83e;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  margin: 0 0 13px;
+}
+
+
+/* TITLE */
+
+.work-with-ga-card h3 {
+  color: #102536;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 31px;
+  line-height: 1.05;
+  font-weight: 600;
+  margin: 0 0 20px;
+}
+
+
+/* DESCRIPTION */
+
+.work-with-ga-card > p:not(.work-with-ga-type) {
+  color: #53616b;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0 0 22px;
+}
+
+
+/* LIST */
+
+.work-with-ga-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.work-with-ga-card li {
+  position: relative;
+
+  color: #344854;
+  font-size: 13px;
+  line-height: 1.6;
+
+  padding-left: 17px;
+  margin-bottom: 8px;
+}
+
+.work-with-ga-card li::before {
+  content: "•";
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  color: #d9a83e;
+  font-weight: 700;
+}
+
+
+/* LINK */
+
+.work-with-ga-link {
+  display: inline-block;
+
+  margin-top: auto;
+  padding-top: 25px;
+
+  color: #102536;
+  font-size: 13px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.work-with-ga-link:hover {
+  color: #d9a83e;
+}
+
+
+/* BOTTOM CTA */
+
+.work-with-ga-bottom {
+  margin-top: 65px;
+
+  padding: 55px 40px;
+
+  background: #102536;
+
+  text-align: center;
+}
+
+.work-with-ga-bottom p {
+  color: #d9a83e;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  margin: 0 0 15px;
+}
+
+.work-with-ga-bottom h3 {
+  color: #ffffff;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 43px;
+  line-height: 1.05;
+  font-weight: 600;
+
+  margin: 0 0 25px;
+}
+
+.work-with-ga-bottom h3 em {
+  font-weight: 500;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+  .work-with-ga-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .work-with-ga-card {
+    min-height: auto;
+  }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .work-with-ga-section {
+    padding: 75px 20px;
+  }
+
+  .work-with-ga-heading h2 {
+    font-size: 43px;
+  }
+
+  .work-with-ga-card {
+    padding: 30px 25px;
+  }
+
+  .work-with-ga-card h3 {
+    font-size: 29px;
+  }
+
+  .work-with-ga-bottom {
+    margin-top: 45px;
+    padding: 40px 25px;
+  }
+
+  .work-with-ga-bottom h3 {
+    font-size: 35px;
+  }
+
+}
