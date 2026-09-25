@@ -712,9 +712,38 @@ footer{background:#0e1c26;color:#d8dee2;padding:30px 0}
    ABOUT / WHY GA SECTION
    ========================================= */
 
-.about-section {
-  background: #ffffff;
-  padding: 115px 0;
+/* =========================================
+   ABOUT STATEMENT
+   ========================================= */
+
+.about-statement {
+  margin-top: 70px;
+  padding: 55px 40px;
+  background: #f8f7f4;
+  text-align: center;
+  border-top: 1px solid #e5e1d8;
+  border-bottom: 1px solid #e5e1d8;
+}
+
+.about-statement p {
+  color: #d9a83e;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0 0 16px;
+}
+
+.about-statement h3 {
+  color: #102536;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 46px;
+  line-height: 1.05;
+  font-weight: 600;
+  margin: 0;
+}
+
+.about-statement h3 em {
+  font-weight: 500;
 }
 
 
