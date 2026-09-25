@@ -498,22 +498,91 @@
 
 <section id="contact" class="section contact">
   <div class="container contact-grid">
+
     <div>
       <p class="eyebrow">GET IN TOUCH</p>
+
       <h2>Let's talk.</h2>
+
       <p>Have questions or ready to get started?</p>
+
       <div class="contact-details">
-        <p>📞 <span>+63 9350 145 105</span><br>✉ <span>amorgamboa1@gmail.com</span><br>⌖ Australia | Remote Support</p>
+        <p>
+          📞 <span>+63 9350 145 105</span><br>
+          ✉ <span>amorgamboa1@gmail.com</span><br>
+          ⌖ Australia | Remote Support
+        </p>
       </div>
-      <p class="small-note"></p>
+
+      <p class="small-note">
+        Tell us a little about your project and we'll get back to you.
+      </p>
     </div>
-    <form action="mailto:YOUR-EMAIL-HERE" method="post" enctype="text/plain">
-      <label>Name<input name="Name" placeholder="Your Name *" required></label>
-      <label>Email<input name="Email" type="email" placeholder="Your Email *" required></label>
-      <label>Service<select name="Service"><option value="">How can we help you?</option><option>Graphic Design</option><option>Video Editing</option><option>Property Marketing</option><option>Social Media Design</option><option>Monthly Creative Support</option></select></label>
-      <label>Message<textarea name="Message" rows="6" placeholder="Tell us about your project *" required></textarea></label>
-      <button class="btn gold" type="submit">Send Message →</button>
+
+    <form action="https://formsubmit.co/amorgamboa1@gmail.com" method="POST">
+
+      <!-- Form settings -->
+      <input type="hidden" name="_subject" value="New GA Creative Agency Enquiry">
+      <input type="hidden" name="_template" value="table">
+
+      <!-- Spam protection -->
+      <input type="hidden" name="_captcha" value="false">
+
+      <!-- Return visitor to the website after submission -->
+      <input
+        type="hidden"
+        name="_next"
+        value="https://amorgamboa1-creator.github.io/"
+      >
+
+      <label>
+        Name
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name *"
+          required
+        >
+      </label>
+
+      <label>
+        Email
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email *"
+          required
+        >
+      </label>
+
+      <label>
+        Service
+        <select name="service">
+          <option value="">How can we help you?</option>
+          <option>Graphic Design</option>
+          <option>Video Editing</option>
+          <option>Property Marketing</option>
+          <option>Social Media Design</option>
+          <option>Monthly Creative Support</option>
+        </select>
+      </label>
+
+      <label>
+        Message
+        <textarea
+          name="message"
+          rows="6"
+          placeholder="Tell us about your project *"
+          required
+        ></textarea>
+      </label>
+
+      <button class="btn gold" type="submit">
+        Send Message →
+      </button>
+
     </form>
+
   </div>
 </section>
 </main>
