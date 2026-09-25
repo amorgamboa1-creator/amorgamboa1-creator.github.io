@@ -339,9 +339,6 @@ footer{background:#0e1c26;color:#d8dee2;padding:30px 0}
   padding: 110px 0;
 }
 
-
-/* PORTFOLIO HEADING */
-
 .portfolio-heading {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -380,16 +377,21 @@ footer{background:#0e1c26;color:#d8dee2;padding:30px 0}
 }
 
 
-/* PORTFOLIO GRID */
+/* =========================================
+   PORTFOLIO GRID
+   ========================================= */
 
 .portfolio-grid-new {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 28px;
+  align-items: start;
 }
 
 
-/* PORTFOLIO CARD */
+/* =========================================
+   PORTFOLIO CARDS
+   ========================================= */
 
 .portfolio-card {
   background: #ffffff;
@@ -404,66 +406,81 @@ footer{background:#0e1c26;color:#d8dee2;padding:30px 0}
 }
 
 
-/* LARGE FIRST CARD */
+/* Remove the old wide-card behaviour */
 
 .portfolio-large {
-  grid-column: span 2;
+  grid-column: span 1;
 }
 
 
-/* PORTFOLIO IMAGE */
+/* =========================================
+   PORTFOLIO IMAGES
+   ========================================= */
+
+.portfolio-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+}
+
+
+/* Just Listed */
+
+.portfolio-image-1 {
+  background-image: url("GA_portfolio_1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* Property Walkthrough */
 
 .portfolio-image-2 {
   background-image: url("GA_portfolio_2.png");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
 }
+
+
+/* Luxury Property */
+
+.portfolio-image-3 {
+  background-image: url("GA_property_3.png");
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* Open Home */
 
 .portfolio-image-4 {
   background-image: url("GA_portfolio_4.png");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
 }
 
-.portfolio-image-1 {
-  background-image: url("GA_portfolio_1.png");
-  width: 150px;
-  height: 150px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+
+/* Sold Campaign */
 
 .portfolio-image-5 {
   background-image: url("GA_portfolio_5.png");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
 }
 
-.portfolio-image-3 {
-  background-image: url("GA_portfolio_3.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-/* Portfolio image size */
-.portfolio-image-1,
-.portfolio-image-2,
-.portfolio-image-3,
-.portfolio-image-4,
-.portfolio-image-5 {
-  width: 150%;
-  height: 200px !important;
-  min-height: 200px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 
-/* PORTFOLIO LABEL */
+/* =========================================
+   PORTFOLIO LABEL
+   ========================================= */
 
 .portfolio-label {
   display: inline-block;
@@ -476,7 +493,9 @@ footer{background:#0e1c26;color:#d8dee2;padding:30px 0}
 }
 
 
-/* PORTFOLIO INFORMATION */
+/* =========================================
+   PORTFOLIO INFORMATION
+   ========================================= */
 
 .portfolio-info {
   padding: 28px 30px 30px;
@@ -505,12 +524,15 @@ footer{background:#0e1c26;color:#d8dee2;padding:30px 0}
 }
 
 
-/* PORTFOLIO CTA */
+/* =========================================
+   PORTFOLIO CTA
+   ========================================= */
 
 .portfolio-cta {
   margin-top: 70px;
   padding: 50px 55px;
   background: #102536;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -536,6 +558,65 @@ footer{background:#0e1c26;color:#d8dee2;padding:30px 0}
 
 .portfolio-cta .btn {
   flex-shrink: 0;
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 1000px) {
+
+  .portfolio-grid-new {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portfolio-heading {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+  .portfolio-section {
+    padding: 75px 20px;
+  }
+
+  .portfolio-heading h2 {
+    font-size: 43px;
+  }
+
+  .portfolio-grid-new {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .portfolio-image {
+    aspect-ratio: 2 / 3;
+  }
+
+  .portfolio-info {
+    padding: 24px;
+  }
+
+  .portfolio-cta {
+    margin-top: 50px;
+    padding: 35px 25px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .portfolio-cta h3 {
+    font-size: 32px;
+  }
+
 }
 
 
