@@ -232,10 +232,102 @@ background-repeat: no-repeat;};overflow:hidden}
 .steps b{display:inline-grid;place-items:center;border:1px solid var(--gold);border-radius:50%;width:28px;height:28px;color:var(--gold);font-size:11px}
 .steps h3{font-size:13px}
 .steps p{font-size:10px;color:var(--muted)}
-.cta{background:linear-gradient(90deg,#a76f34,#243744);color:#fff;padding:52px 0}
-.cta-row{display:flex;align-items:center;justify-content:space-between;gap:30px}
-.cta h2{font-size:32px;margin:0 0 8px}
-.cta p{font-size:12px}
+/* =========================================
+   CTA BANNER
+   ========================================= */
+
+.cta {
+  background: #102536;
+  padding: 75px 0;
+}
+
+.cta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.cta h2 {
+  color: #ffffff;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 48px;
+  line-height: 1.05;
+  font-weight: 600;
+  margin: 0 0 18px;
+}
+
+.cta p {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.cta .btn.gold {
+  flex-shrink: 0;
+  background: #d9a83e;
+  color: #102536;
+  border: 1px solid #d9a83e;
+  padding: 14px 24px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.cta .btn.gold:hover {
+  background: #ffffff;
+  border-color: #ffffff;
+}
+
+
+/* =========================================
+   CTA — TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+
+  .cta {
+    padding: 65px 0;
+  }
+
+  .cta-row {
+    gap: 35px;
+  }
+
+  .cta h2 {
+    font-size: 43px;
+  }
+
+}
+
+
+/* =========================================
+   CTA — MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+  .cta {
+    padding: 60px 20px;
+  }
+
+  .cta-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .cta h2 {
+    font-size: 39px;
+  }
+
+  .cta p {
+    font-size: 14px;
+  }
+
+}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px}
 .contact p{color:var(--muted);font-size:13px}
 .contact-details span{color:var(--ink);font-weight:600}
